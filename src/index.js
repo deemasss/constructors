@@ -21,7 +21,7 @@ const book333 = new Book('333', new Date(), dima, authors);
 
 dima.addToFriends(alina);
 dima.addToFriends(bohdan);
-dima.likeBook(book1984);
+//dima.likeBook(book1984);
 
 
 console.log(dima.likedBooks);

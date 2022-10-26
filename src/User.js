@@ -30,14 +30,14 @@ export function User(name, date) {
 
     this.removeFriend = this.addToFriends;
 
-    this.likeBook = function(book) {
-        if (this.likes.includes(book)) {
-            this.likes = this.likes.filter((book) => book !== book);
-            book.likes = book.likes.filter((book) => book !== this);
+    this.likeBook = function(like) {
+        if (this.likes.includes(like)) {
+            this.likes = this.likes.filter((book) => book !== like);
+            book.likedUsers = book.likedUsers.filter((book) => book !== this);
             return;
         }
-        this.likes.push(book)
-        book.likedUsers.push(this)
+        this.likes.push(like)
+        like.likedUsers.push(this)
     };
 
     this.unlikeBook = this.likeBook;
