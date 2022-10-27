@@ -29,5 +29,5 @@ console.log(dima.friendsNames);
 
 console.log(book1984.suggestedPublicators);
 console.log(book1984.suggestedBooks);
-console.log(book1984);
 */
+
